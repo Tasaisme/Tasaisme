@@ -1,0 +1,76 @@
+from tkinter import simpledialog, messagebox
+from tkinter import *
+import tkinter as tk
+
+def box1():
+    box_message = tk.Toplevel()
+    box_message.geometry("300x300")
+    box_message.title("Cravings")
+    label = tk.Label(box_message, text = "\n CRAVINGS \n\n The bar pink gin\n Dutchmilk \n Mogu mugo nga lychee ")
+    label.pack()
+
+def box2():
+    top = tk.Toplevel()
+    top.geometry("505x250")
+    top.title("Upin and Ipin")
+    label = tk.Label(top, text="hakdog")
+    topbtn1 = tk.Button(top, text="for upin", bg="#e9c558", width = 22, height = 10, font = ("Arial", 14), command=upin)
+    topbtn1.grid(row = 1, column = 1)
+    topbtn2 = tk.Button(top, text="for ipin", bg="#64bfdd", width = 22, height = 10, font = ("Arial", 14), command=ipin)
+    topbtn2.grid(row = 1, column = 2)
+    label.pack() 
+
+def upin():
+    upin_new = simpledialog.askstring("upin", "write something for upin")
+    print(upin_new)
+def ipin():
+    ipin_new = simpledialog.askstring("ipin", "write something for ipin")
+    print(ipin_new)
+
+def box3():
+    text = tk.Toplevel()
+    text.title("thoughts")
+    text.geometry("300x300")
+    label = tk.Label(text, text = "wanna put myself inside the washing machine \n and spin around")
+    label.pack()
+
+def box4():
+    message = simpledialog.askstring("Message", "Write a message")
+    print(message)
+
+def box5():
+    text = tk.Toplevel()
+    text.title("oki po")
+    text.geometry("300x300")
+    label = tk.Label(text, text = "oki po")
+    label.pack()
+
+def box6():
+    text = tk.Toplevel()
+    text.title("thank you")
+    text.geometry("300x300")
+    label = tk.Label(text, text = "thank you")
+    label.pack()
+
+root = tk.Tk()
+root.geometry("690x330")
+
+btn1 = tk.Button(root, text="cravings", bg="#7ec29a", width=20, height=10, font=("Arial", 15), command=box1)
+btn1.grid(row=2, column=1)
+
+btn2 = tk.Button(root, text="Upin and Ipin", bg="#8b89b8", width=20, height=3, font=("Arial", 15), command=box2)
+btn2.grid(row=3, column=1)
+
+btn3 = tk.Button(root, text="thoughts", bg="#7ec29a",  width=20, height=10, font=("Arial", 15), command=box3)
+btn3.grid(row=2, column=2)
+
+btn4 = tk.Button(root, text="message box", bg="#8b89b8", width=20, height=3, font=("Arial", 15), command=box4)
+btn4.grid(row=3, column=2)
+
+btn5 = tk.Button(root, text="oki po", bg="#7ec29a",  width=20, height=10, font=("Arial", 15), command=box5)
+btn5.grid(row=2, column=3)
+
+btn6 = tk.Button(root, text="thank you", bg="#8b89b8", width=20, height=3, font=("Arial", 15), command=box6)
+btn6.grid(row=3, column=3)
+
+root.mainloop()
