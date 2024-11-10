@@ -1,9 +1,6 @@
-- 👋 Hi, I’m @Tasaisme
-- 👀 I’m interested in pretty gurls
-- 🌱 I’m currently learning python
+- 👋 Hi, I’m @Dino
 - 💞️ I’m looking to collaborate on chismis
-- 📫 How to reach me: add me in my istagram @tasaisme
-- 😄 Pronouns: ...
+- 📫 How to reach me: add me in my istagram @_unstable.dino
 - ⚡ Fun fact: im an IT student ofcourse i don't know how to code
 
 <!---
